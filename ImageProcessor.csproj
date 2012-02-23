@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6794DB5C-35B4-4994-A9FF-0927A585B653}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ImageProcessor</RootNamespace>
+    <AssemblyName>Memory</AssemblyName>
+    <ApplicationIcon>Photoshop.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control Forms\DialogSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control Forms\BitMask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control Forms\BitMask.Designer.cs">
+      <DependentUpon>BitMask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Child.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Child.Designer.cs">
+      <DependentUpon>Child.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control Forms\ColorSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control Forms\ColorSelector.Designer.cs">
+      <DependentUpon>ColorSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control Forms\BrSlice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control Forms\BrSlice.Designer.cs">
+      <DependentUpon>BrSlice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control Forms\Selection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control Forms\Selection.Designer.cs">
+      <DependentUpon>Selection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control Forms\Zoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control Forms\Zoom.Designer.cs">
+      <DependentUpon>Zoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control Forms\AddNoise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control Forms\AddNoise.Designer.cs">
+      <DependentUpon>AddNoise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control Forms\BinTresh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control Forms\BinTresh.Designer.cs">
+      <DependentUpon>BinTresh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control Forms\GetAlpha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control Forms\GetAlpha.Designer.cs">
+      <DependentUpon>GetAlpha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Histogram\DrawArea.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Histogram\DrawArea.Designer.cs">
+      <DependentUpon>DrawArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Histogram\HistogramWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Histogram\HistogramWin.Designer.cs">
+      <DependentUpon>HistogramWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageEdit Code\ImageEdit.cs" />
+    <Compile Include="Control Forms\MatrixInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control Forms\MatrixInput.Designer.cs">
+      <DependentUpon>MatrixInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parent.Designer.cs">
+      <DependentUpon>Parent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="About.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control Forms\BitMask.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BitMask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Child.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Child.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control Forms\ColorSelector.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColorSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control Forms\BrSlice.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BrSlice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control Forms\DialogSelection.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DialogSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control Forms\Selection.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Selection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control Forms\Zoom.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Zoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control Forms\AddNoise.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddNoise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control Forms\BinTresh.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BinTresh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control Forms\GetAlpha.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GetAlpha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Histogram\DrawArea.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DrawArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Histogram\HistogramWin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HistogramWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control Forms\MatrixInput.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MatrixInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parent.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Parent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Photoshop.ico" />
+    <Content Include="Resources\12.png" />
+    <None Include="Resources\about.gif" />
+    <None Include="Resources\49.png" />
+    <Content Include="Resources\document-print-preview.png" />
+    <Content Include="Resources\edit-find.png" />
+    <Content Include="Resources\edit-redo.png" />
+    <Content Include="Resources\edit-undo.png" />
+    <Content Include="Resources\exit.gif" />
+    <Content Include="Resources\help-browser.png" />
+    <None Include="Resources\histogram_window.gif" />
+    <Content Include="Resources\info.ico" />
+    <Content Include="Resources\Log Off.ico" />
+    <Content Include="Resources\openim1.gif" />
+    <Content Include="Resources\save.gif" />
+    <Content Include="Resources\view-refresh.png" />
+    <Content Include="Resources\window-new.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
